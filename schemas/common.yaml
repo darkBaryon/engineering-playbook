@@ -1,0 +1,24 @@
+schema_version: 1
+required_metadata:
+  - playbook_version
+  - profile
+  - status
+baseline:
+  git: full_commit_sha
+  artifact: content_hash
+  non_git: explicit_file_or_version_list
+review_verdicts:
+  - 通过
+  - 需修改
+  - 驳回
+deviation_levels:
+  - 小偏差
+  - 中偏差
+  - 大偏差
+gate_card_required_fields:
+  - conclusion
+  - coverage
+  - decisions
+  - spot_checks
+  - largest_remaining_risk
+  - next_action

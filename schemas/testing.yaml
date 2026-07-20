@@ -1,0 +1,34 @@
+schema_version: 1
+profile: testing
+levels:
+  - 轻量级
+  - 标准级
+  - 高风险级
+states:
+  - 待测试
+  - 准备中
+  - 执行中
+  - 阻塞
+  - 未通过
+  - 修复中
+  - 待复测
+  - 已通过
+  - 待业务验收
+  - 已验收
+  - 可发布
+  - 已归档
+case_verdicts:
+  - 通过
+  - 未通过
+  - 阻塞
+  - 不适用
+  - 未执行
+required_artifacts_standard:
+  - test_plan
+  - checklist
+  - preflight_facts
+  - test_record
+gates:
+  gate_t0: 测试准入
+  gate_t1: 独立测试通过
+  gate_t2: 业务验收

@@ -1,0 +1,23 @@
+schema_version: 1
+profile: testing
+playbook_version: <version>
+
+test_object:
+  baseline: <完整commit或版本>
+  source_version: <完整commit或版本>
+  artifact_hash: <哈希或不适用>
+
+environment:
+  expected: <项目规定环境>
+  runtime_evidence: <证据路径或不适用>
+
+platform:
+  kind: <device|browser|api|service|other>
+  identity: <设备serial/浏览器版本/运行时等>
+
+commands:
+  - name: <static-or-unit-test>
+    run: [<argv>]
+
+required_artifacts: []
+required_evidence: []
