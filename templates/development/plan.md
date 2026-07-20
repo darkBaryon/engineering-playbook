@@ -1,7 +1,7 @@
 ---
 type: development_plan
 playbook_version: <version>
-profile: development
+flow: development
 version: 1
 status: 草拟中
 baseline: <完整commit>

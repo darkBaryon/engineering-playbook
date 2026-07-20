@@ -1,7 +1,7 @@
 ---
 type: test_record
 playbook_version: <version>
-profile: testing
+flow: testing
 round: 1
 status: <执行中|阻塞|未通过|已通过|待业务验收|已验收>
 tester: <测试职责>

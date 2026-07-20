@@ -1,7 +1,7 @@
 # 预飞事实表
 
 - Playbook 版本：`<version>`
-- Profile：`<profile>`
+- 流程：`<development|refactoring|testing>`
 - 目标项目：`<project>`
 - 基线：`<commit/version>`
 - 当前对象：`<commit/artifact hash>`

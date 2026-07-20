@@ -1,7 +1,7 @@
 ---
 type: test_plan
 playbook_version: <version>
-profile: testing
+flow: testing
 status: 待测试
 level: <轻量级|标准级|高风险级>
 source_version: <完整commit或版本>
