@@ -1,7 +1,7 @@
 ---
 type: refactoring_plan
 playbook_version: <version>
-profile: refactoring
+flow: refactoring
 version: 1
 status: 草拟中
 baseline: <完整commit>

@@ -1,7 +1,7 @@
 ---
 type: refactoring_acceptance
 playbook_version: <version>
-profile: refactoring
+flow: refactoring
 status: <待验收|已通过|未通过>
 target_commit: <完整commit>
 ---

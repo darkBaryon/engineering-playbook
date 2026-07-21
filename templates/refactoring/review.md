@@ -1,7 +1,7 @@
 ---
 type: refactoring_review
 playbook_version: <version>
-profile: refactoring
+flow: refactoring
 round: 1
 target: <方案版本或commit范围>
 verdict: <通过|需修改|驳回>

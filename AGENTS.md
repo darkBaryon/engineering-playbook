@@ -1,12 +1,14 @@
 # Engineering Playbook 维护规则
 
-修改本仓前先阅读 `README.md`、`CONTRIBUTING.md` 和受影响的 `core/`、`profiles/` 文档。
+修改本仓前先阅读 `README.md`、`MAINTENANCE.md` 和受影响流程的 `README.md` 及相关编号章节。
 
 - 本仓是开发、重构、测试三套规范的 Git 唯一事实源，不同步维护 Notion 副本。
 - 不创建 `cases/` 或 `docs/`；实际任务记录留在业务项目。
-- 三套流程共同且语义一致的规则进入 `core/`；专项规则进入对应 `profiles/`。
-- 项目分支、环境、语言命令、设备和资源限制不得写入通用 Profile。
+- 三套规范分别自包含，允许重复共同规则；不要建立读者必须先理解的公共 Core。
+- 章节按实际执行顺序拆分，不按职责、Gate、证据等横向概念跨流程拆分。
+- 项目分支、环境、语言命令、设备和资源限制不得写入通用规范。
 - 流程按职责而不是人员、Agent 产品或具体模型书写。
-- 改动产物结构时同步 `templates/` 和 `schemas/`。
-- 修改强制 Gate、状态或必填产物时更新 `VERSION`、`CHANGELOG.md`，并按破坏性变更处理。
-- 提交前校验所有相对链接和 YAML，确认 `core/`、`profiles/`、`templates/`、`schemas/` 中没有项目专属地址或分支名。
+- 只保留实际会复制使用的模板；没有执行器消费时不增加 Schema 或示意配置。
+- 共同规则变化时，按 `MAINTENANCE.md` 的一致性表检查三套规范，不能只改单处。
+- 改变强制 Gate、状态、职责边界、必需产物或目录契约时更新 `VERSION` 和 `CHANGELOG.md`。
+- 提交前校验相对链接和模板 frontmatter，确认没有项目专属地址、分支、账号或敏感数据。

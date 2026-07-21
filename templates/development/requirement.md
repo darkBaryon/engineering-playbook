@@ -1,7 +1,7 @@
 ---
 type: requirement
 playbook_version: <version>
-profile: development
+flow: development
 status: 观察中
 level: <轻量级|标准级|蓝图级>
 owner: <设计职责>

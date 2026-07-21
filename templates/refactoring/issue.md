@@ -1,7 +1,7 @@
 ---
 type: refactoring_issue
 playbook_version: <version>
-profile: refactoring
+flow: refactoring
 status: 观察中
 level: <轻量级|标准级|蓝图级>
 owner: <设计职责>

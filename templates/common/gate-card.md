@@ -1,7 +1,7 @@
 # Gate 卡片
 
 - Playbook 版本：`<version>`
-- Profile：`<development|refactoring|testing>`
+- 流程：`<development|refactoring|testing>`
 - Gate：`<名称>`
 - 对象与精确版本：`<任务/分支/commit/产物哈希>`
 - 结论一句话：<本次请求放行什么>
