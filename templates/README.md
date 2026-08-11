@@ -4,6 +4,7 @@
 
 ```text
 common/         Gate 卡片和预飞事实表
+change/         收敛评审记录
 development/    需求、方案、评审和验收记录
 refactoring/    问题、蓝图、方案、评审和验收记录
 testing/        测试计划和测试记录

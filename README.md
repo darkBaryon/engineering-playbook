@@ -1,12 +1,15 @@
 # Engineering Playbook
 
-这里长期维护三套工程规范。它们有相同的工程纪律，但处理的对象和完成证据不同：
+这里长期维护一个 Change 模型和三套工程规范。Change 是工程账本的最小完整单元；开发、重构、测试是 Change 内部的流程类型，各自有独立的执行手册：
 
 | 规范 | 回答的问题 | 入口 |
 |---|---|---|
+| Change 模型 | 一次系统变化怎样从提出走到交付与知识沉淀 | [Change 模型](change/README.md) |
 | 开发 | 一个需求或缺陷怎样变成可交付的代码变化 | [开发规范](development/README.md) |
 | 重构 | 怎样调整既有结构，同时保护或显式迁移行为 | [重构规范](refactoring/README.md) |
 | 测试 | 怎样对一个精确版本建立可信的测试与发布结论 | [测试规范](testing/README.md) |
+
+Change 层的三个配套页面：[风险分级与条件 Gate](change/risk-levels-and-gates.md)（流程重量怎么定、什么时候需要用户拍板）、[收敛评审](change/convergence-review.md)（实现之后系统还健不健康）、[Finding 台账](change/findings.md)（看到但暂不修的结构问题怎么不被忘掉）。
 
 ## 怎么使用
 
@@ -40,14 +43,16 @@
 ## 目录
 
 ```text
+change/           Change 模型、风险分级与条件 Gate、收敛评审、Finding 台账
 development/      开发规范，按立案到交付的顺序阅读
 refactoring/      重构规范，按基线到收口的顺序阅读
 testing/          测试规范，按准入到发布结论的顺序阅读
 templates/        需要复制到业务项目的记录骨架
+skills/           可复制到业务项目的 Agent skill 参考实现
 MAINTENANCE.md    三份规范如何保持一致
 SOURCES.md        初始迁移来源与基线
 CHANGELOG.md      版本变化
 VERSION           当前版本
 ```
 
-当前版本：[`1.0.0`](VERSION)。
+当前版本：[`1.1.0`](VERSION)。

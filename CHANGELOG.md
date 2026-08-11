@@ -6,6 +6,15 @@
 - Minor：新增向后兼容的可选规则、模板或字段；
 - Major：改变强制 Gate、状态流转、职责边界或必需产物。
 
+## 1.1.0 - 2026-08-12
+
+- 新增 Change 模型（`change/`）：Change 作为工程账本的最小完整单元，开发、重构、测试降级为其内部流程类型；现有三套规范原文不变；
+- 新增风险分级与条件 Gate：L1/L2/L3 按风险定流程重量，Gate 1 仅在存在拍板项时触发，无拍板项自动继续并留痕；Gate 2 不可省略但重量分级；
+- 新增收敛评审：实施后评估系统整体健康度（重复 / 膨胀 / 边界 / 契约 / 测试 / 非功能），出口为无碍 / Blocking / REF Case / Finding；第一原则为"机械检查产事实，判断只属于评审 agent，指标不得直接构成结论"；
+- 新增 Finding 台账：记录看到但暂不修的结构问题，含豁免机制与转化触发条件（`convert_when`）；
+- 新增 Change 收尾的知识沉淀清单：过程记录留 Workbench，长期事实迁移到主仓库文档（测试 / OpenAPI / ADR / Runbook / AGENTS.md）；
+- 新增 `templates/change/convergence-review.md` 与 `skills/convergence-review/`（skill 参考实现）。
+
 ## 1.0.0 - 2026-07-21
 
 - 将开发、重构、测试改为三套分别自包含的执行手册；
